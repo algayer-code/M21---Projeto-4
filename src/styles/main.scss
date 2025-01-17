@@ -1,0 +1,26 @@
+@use 'variaveis';
+@use 'sinopse';
+@use 'personagens';
+@use 'generos';
+@use 'video--info';
+@use 'enredo';
+@use 'footer';
+@use 'header';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('/dist/images/estrelas.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top left;
+    height: 100%;
+}

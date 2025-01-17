@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: variaveis.$corFonteSecundaria;
+    padding: 16px 0;
+    z-index: 1000;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 0 20px;
+
+                a {
+                    color: variaveis.$corFonteSecundaria;
+                    font-size: variaveis.$fonteP;
+                    text-decoration: none;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}

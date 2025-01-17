@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.enredo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 64px;
+
+    h1 {
+        font-size: variaveis.$fonteG;
+        color: variaveis.$corFonte;
+        margin-bottom: 64px;
+    }
+
+    p {
+        font-size: variaveis.$fonteP;
+        color: variaveis.$corFonteSecundaria;
+        margin-bottom: 16px;
+    }
+
+    .enredo__texto__oculto {
+        display: none;
+    }
+
+    .enredo__botao {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: 1px solid variaveis.$corFonteSecundaria;
+        border-radius: 8px;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: variaveis.$fonteP;
+        color: variaveis.$corFonteSecundaria;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.01);
+        }
+    }
+}

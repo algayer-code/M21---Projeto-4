@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid variaveis.$corFonteFooter;
+
+    &__texto {
+        color: variaveis.$corFonteFooter;
+        font-size: variaveis.$fontePP;
+    }
+}
