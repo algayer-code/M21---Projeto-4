@@ -25,4 +25,19 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        height: auto;
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+
+                li {
+                    margin: 5px;
+                }
+            }
+        }
+    }
 }

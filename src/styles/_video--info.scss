@@ -6,13 +6,31 @@
     align-items: center;
     height: 70vh;
 
+    // media
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
     .video__section {
         margin-right: 64px;
+
+            // media
+            @media (max-width: 768px) {
+                margin: 0;
+            }
 
         .video__section__iframe {
             width: auto;
             height: 500px;
             aspect-ratio: 16/9;
+
+            // media
+            @media (max-width: 768px) {
+                width: 320px;
+                height: auto;
+            }
         }
     }
 
@@ -28,6 +46,18 @@
 
                 p {
                     margin-left: 8px;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: 50%;
+                    padding: 8px;
                 }
             }
         }

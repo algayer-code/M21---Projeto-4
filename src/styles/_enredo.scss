@@ -39,4 +39,15 @@
             transform: scale(1.01);
         }
     }
+
+    // media
+    @media (max-width: 768px) {
+        padding: 16px;
+        height: auto;
+
+        h1 {
+            font-size: variaveis.$fonteMobileG;
+            margin-bottom: 16px;
+        }
+    }
 }
